@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Faculty - FacultyFuture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="faculty.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="#3B82F6"/>
+                    <path d="M10 30V10H30V30H10ZM14 26H26V14H14V26Z" fill="white"/>
+                    <path d="M18 18H22V22H18V18Z" fill="white"/>
+                </svg>
+                <span>FacultyFuture</span>
+            </div>
+            <nav>
+                <ul><li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><button id="authBtn">Login/Signup</button></li>
+                    <li><a href="faculty.html" class="nav-link active">View Faculty</a></li>
+                    <li><a href="new.html" class="nav-link">New Vacancies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="faculty-list">
+            <div class="container">
+                <h1>Faculty List</h1>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search faculty...">
+                </div>
+                <table id="facultyTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Expertise</th>
+                            <th>Joining Date</th>
+                            <th>Retirement Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Faculty data will be populated here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <div id="facultyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="facultyName"></h2>
+            <p><strong>Expertise:</strong> <span id="facultyExpertise"></span></p>
+            <p><strong>Joining Date:</strong> <span id="facultyJoiningDate"></span></p>
+            <p><strong>Retirement Date:</strong> <span id="facultyRetirementDate"></span></p>
+            <p><strong>Department:</strong> <span id="facultyDepartment"></span></p>
+            <p><strong>Contact:</strong> <span id="facultyContact"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>FacultyFuture</h3>
+                    <p>KK Wagh Engineering Institute and Research College</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FacultyFuture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="faculty.js"></script>
+</body>
+</html>
